@@ -19,7 +19,7 @@
   header {
     img {
       border-radius: 100px;
-      border: 5pc solid var(--white);
+      border: 5px solid var(--white);
     }
   }
 
@@ -27,18 +27,21 @@
     p {
       text-align: center;
     }
+
     nav {
       margin: 20px 0;
+
       ul {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 30px;
-      }
-      li {
-        a {
-          width: 250px;
+
+        li {
+          a {
+            width: 250px;
+          }
         }
       }
     }
@@ -49,6 +52,37 @@
       justify-content: center;
       align-items: center;
       gap: 30px;
+
+      figure {
+        width: 335px;
+        height: 77px;
+
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        border: 1px solid var(--white);
+        border-radius: 7px;
+
+        figcaption {
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            p {
+              margin: 3px 0;
+            }
+            strong {
+              color: var(--primary);
+            }
+          }
+        }
+      }
     }
   }
 }
