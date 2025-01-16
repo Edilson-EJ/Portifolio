@@ -85,4 +85,28 @@
       }
     }
   }
+
+  @media (max-width: 750px) {
+    aside {
+      nav {
+        ul {
+          flex-direction: column;
+          gap: 15px;
+
+          li,
+          li a {
+            width: 100%;
+          }
+        }
+      }
+    }
+    section {
+      flex-direction: column;
+      gap: 15px;
+
+      figure {
+        width: 100%;
+      }
+    }
+  }
 }

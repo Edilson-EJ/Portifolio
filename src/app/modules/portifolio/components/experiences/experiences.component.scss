@@ -1,0 +1,75 @@
+:host {
+  margin-top: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    margin: 0 0 25px 0;
+  }
+
+  details {
+    overflow: hidden;
+    margin-top: 10px;
+    background: var(--black-010);
+    border-radius: 7px;
+    color: var(--white);
+
+    summary,
+    article {
+      padding: 10px 20px;
+      color: var(--grey);
+      transition: 500ms ease-out;
+    }
+
+    summary {
+      cursor: pointer;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: var(--primary);
+      border-radius: 7px;
+
+      p {
+        font-size: 14px;
+        color: var(--black-010);
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 16px; // Tamanho do ícone
+        height: 16px;
+        background-image: url("../../../../../assets/icons/chevron-down.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    &[open] summary {
+      &::after {
+        transform: rotate(180deg);
+        background-image: url("../../../../../assets/icons/chevron-up.svg");
+        margin-top: 5px;
+      }
+      background-color: var(--primary);
+      border-radius: 7px 7px 0 0;
+    }
+
+    &:not([open]) summary::after {
+      background-image: url("../../../../../assets/icons/chevron-down.svg");
+      margin-top: 5px;
+    }
+  }
+}
