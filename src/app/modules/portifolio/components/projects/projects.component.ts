@@ -16,16 +16,17 @@ export class ProjectsComponent {
 
   public arrayProjects = signal<IProjects[]>([
     {
-      src: 'assets/img/projects/android.svg',
-      alt: 'teste',
-      title: 'teste',
+      src: 'assets/img/projects/sha-256.png',
+      alt: 'classical-cryptography',
+      title: 'classical-cryptography',
       with: '100px',
-      height: '51px',
-      description: '',
+      height: '100px',
+      description:
+        'Projeto acadêmico de Segurança de Redes que implementa três criptografias clássicas: Cifra de César, Transposição e Chave Única. Desenvolvido em Angular, com interface responsiva e explicações didáticas.',
       links: [
         {
-          name: 'nome do projeto',
-          href: 'link do projeto',
+          name: 'classical-cryptography',
+          href: 'https://github.com/Edilson-EJ/classical-cryptography',
         },
       ],
     },
